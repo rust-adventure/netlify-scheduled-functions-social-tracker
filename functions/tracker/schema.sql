@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS tracking(
+    id VARBINARY(27) NOT NULL,
+    recorded_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    recorded_value INT NOT NULL,
+    PRIMARY KEY ( id )
+);
