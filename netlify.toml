@@ -1,9 +1,11 @@
-[functions]
+[build]
 command = """
 mkdir functions &&
 cargo build --release &&
 cp target/release/tracker functions/ 
 """
+
+[functions]
 directory = "functions/"
 
 [functions.tracker]
