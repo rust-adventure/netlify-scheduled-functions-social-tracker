@@ -1,4 +1,9 @@
 [functions]
+command = """
+mkdir functions &&
+cargo build --release &&
+cp target/release/tracker functions/ 
+"""
 directory = "functions/"
 
 [functions.tracker]
