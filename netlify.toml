@@ -9,4 +9,4 @@ cp target/release/tracker functions/
 directory = "functions/"
 
 [functions.tracker]
-schedule = "@daily"
+schedule = "@hourly"
