@@ -18,7 +18,6 @@ pub async fn twitter() -> Result<u64> {
             .text()
             .await
             .into_diagnostic()?;
-
     let document = Html::parse_document(&html);
     let selector = Selector::parse(
         r#"a[href="/chrisbiscardi/followers"]"#,

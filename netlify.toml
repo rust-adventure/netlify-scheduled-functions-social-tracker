@@ -3,6 +3,7 @@ command = """
 ldd --version &&
 mkdir functions &&
 cargo build --release &&
+ldd target/release/tracker &&
 cp target/release/tracker functions/ 
 """
 
