@@ -35,16 +35,16 @@ async fn handler(
     let count_res = twitter().await;
     match count_res {
         Ok(count) => {
-        //     sqlx::query!(
-        //         r#"
-        // INSERT INTO tracking (
-        //     id, recorded_value
-        // ) VALUES (?, ?)"#,
-        //         Id::new(),
-        //         count,
-        //     )
-        //     .execute(POOL.get().unwrap())
-        //     .await?;
+            //     sqlx::query!(
+            //         r#"
+            // INSERT INTO tracking (
+            //     id, recorded_value
+            // ) VALUES (?, ?)"#,
+            //         Id::new(),
+            //         count,
+            //     )
+            //     .execute(POOL.get().unwrap())
+            //     .await?;
             Ok(ApiGatewayProxyResponse {
                 status_code: 200,
                 headers: HeaderMap::new(),

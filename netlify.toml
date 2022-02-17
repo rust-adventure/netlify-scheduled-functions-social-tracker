@@ -1,11 +1,14 @@
 [build]
 command = """
-ldd --version &&
-mkdir functions &&
-cargo build --release &&
-ldd target/release/tracker &&
-cp target/release/tracker functions/ 
+echo done
 """
+# command = """
+# ldd --version &&
+# mkdir functions &&
+# cargo build --release &&
+# cp target/release/tracker functions/ 
+# cp target/release/tracker-url functions/ 
+# """
 
 [functions]
 directory = "functions/"
